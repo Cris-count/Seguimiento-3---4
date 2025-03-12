@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Blackjack</title>
+    <style>
+        #game {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .hand {
+            margin-bottom: 20px;
+        }
+        .hand h2 {
+            margin-bottom: 10px;
+        }
+        .hand p {
+            margin: 5px 0;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="game">
+        <h1>Bienvenido al Juego de Blackjack</h1>
+        <div class="hand" id="player-hand">
+            <h2>Jugador</h2>
+            <p id="player-cards"></p>
+            <p id="player-value"></p>
+        </div>
+        <div class="hand" id="dealer-hand">
+            <h2>Dealer</h2>
+            <p id="dealer-cards"></p>
+            <p id="dealer-value"></p>
+        </div>
+        <button id="hit-button">Pedir Carta</button>
+        <button id="stand-button">Plantarse</button>
+        <p id="result"></p>
+    </div>
+    <script src="Blackjack ciclo.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+</head>
+<body>
+    <script src="Blackjack.js"></script>
+    <h1>Blackjack</h1>
+    <div>
+        <p>Jugador 1</p>
+        <button id="btn1">Pedir</button>
+        <button id="btn2">Plantarse</button>
+        <p id="puntos1">Puntos: 0</p>
+    </div>
+    <div>
+        <p>Jugador 2</p>
+        <button id="btn3">Pedir</button>
+        <button id="btn4">Plantarse</button>
+        <p id="puntos2">Puntos: 0</p>
+    </div>
+    <div>
+        <p>Jugador 3</p>
+        <button id="btn5">Pedir</button>
+        <button id="btn6">Plantarse</button>
+        <p id="puntos3">Puntos: 0</p>
+    </div>
+    <button id="btnReiniciar">Reiniciar</button>
+    <script>
+        document.getElementById('btn1').addEventListener('click', () => pedirCarta(1));
+        document.getElementById('btn2').addEventListener('click', () => plantarse(1));
+        document.getElementById('btn3').addEventListener('click', () => pedirCarta(2));
+        document.getElementById('btn4').addEventListener('click', () => plantarse(2));
+        document.getElementById('btn5').addEventListener('click', () => pedirCarta(3));
+        document.getElementById('btn6').addEventListener('click', () => plantarse(3));
+        document.getElementById('btnReiniciar').addEventListener('click', reiniciarPartida);
+    </script>
+</body>
+</html>
